@@ -31,3 +31,6 @@ pipelines:
                 - there
                 command: echo
                 run_if: passed
+          resources:
+            - windows
+
