@@ -24,6 +24,8 @@ pipelines:
         jobs:
           run:
             timeout: 0
+            resources:
+            - windows
             tasks:
             - exec:
                 arguments:
@@ -31,6 +33,5 @@ pipelines:
                 - there
                 command: echo
                 run_if: passed
-          resources:
-            - windows
+         
 
